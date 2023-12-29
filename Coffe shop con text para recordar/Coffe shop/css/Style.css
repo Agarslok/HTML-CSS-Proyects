@@ -1,0 +1,396 @@
+/**Declare Colors and Fonts**/
+:root{
+    --fcolor:#1b191c;
+    --scolor:#452a1f;
+    --tcolor:#754831;
+    --focolor:#a07352;
+    --scolor:#cfb095;
+    --secolor: #E4D2B2;
+    --Green:#a8c29e;
+    --Grey: #b6b6b6;
+    --Tittle: 'Lexend', sans-serif; 
+}
+/**Structure**/
+
+html{
+    box-sizing: border-box; /* No afecte el ancho de nuestros elementos */
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+/*Main*/
+/*Encabezado*/
+.Header{
+    background-image: url(../img/Yanubabanner.png);
+    height: 65.74rem;
+    border-radius: 0rem 2rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.no-margin{
+    margin: 0rem;
+}
+
+.Header__texto{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--secolor);
+}
+
+.Header__texto h2{
+    font-family: var(--Tittle);
+    color: var(--Green);
+    font-size: 5rem;
+    
+}
+
+.Header__texto h3{
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.Header__texto p{
+    padding-top: 2rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
+    font-size: 3rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.Header_contenedor_barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-left: 6.5rem;
+    padding-right: 10rem;
+}
+
+.Header_nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.Header_contenedor_barra_LogoYanuba{
+    max-width: 30rem;
+}
+
+.Header_nav_enlace{
+    display: block;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--secolor);
+    font-family: 'Pacifico', cursive;
+}
+
+.Header_nav_enlace:hover{
+    color: var(--Green);
+}
+
+.Home_h1, .Home_span{
+    color: var(--secolor);
+}
+
+
+/*Cuerppo de la pagina*/
+
+.Contenidomain_contenedor{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+    margin-left: 3rem;
+}
+
+/*Entrada*/
+
+.Contenidomain_contenedor_blog .Contenidomain_contenedor_blog_h2{
+    padding-left: 5.3rem;
+}
+
+.Contenidomain_contenedor h2{
+    font-size: 3rem;
+}
+
+.Contenidomain_contenedor_sidebar{
+    text-align: center;
+}
+
+.Contenidomain_contenedor_blog_entrada_img{
+    height: 40rem;
+    width: 100rem;
+    padding-top: 3rem ;
+}
+
+.Contenidomain_contenedor_blog_entrada_contenido a{
+    background-color: var(--Green);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.Contenidomain_contenedor_blog_entrada_contenido a:hover{
+    background-color: var(--secolor);
+    color: var(--Green);
+}
+
+/*Aside*/
+
+.Entrada{
+    border-bottom: 1px solid var(--Grey);
+}
+
+.Entrada:last-of-type{
+    border: none;
+
+}
+
+.aside_fcourse h3, .aside_scourse h3{
+    font-size: 2rem;
+}
+
+.aside_fcourse, .aside_scourse{
+    font-size: 1rem;
+    text-align: left;
+    
+}
+
+.aside_fcourse_list_items .afli_h4, .aside_scourse_list_items .afli_h4{
+    border-top: 1px solid var(--Grey);
+    padding-top: 3rem;
+    margin-right: 2rem;
+}
+
+.aside_fcourse_list_items .afli_h4:first-of-type{
+    border: none;
+    margin-right: 0;
+    padding-top: 0;
+}
+
+.aside_fcourse_list, .aside_scourse_list{
+    display: inline;
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+}
+
+.afli_h4{
+    font-size: 2rem;
+}
+
+.afli_p{
+    font-weight: bold;
+}
+    
+.afli_p_span{
+    font-weight: normal;
+}
+
+.aside_fcourse_list_items p, .aside_scourse_list_items p{
+    font-size: 1.5rem;
+}
+
+.aside_fcourse a, .aside_scourse a{
+    display: block;
+    background-color: #754831;
+    color: #E4D2B2;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0rem 2rem;
+}
+/*Main*/
+
+/*Nosotros*/
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.contenedor_img{
+    padding-top: 2rem;
+    padding-left: 3rem;
+    height: 40rem;
+}
+
+.contenedor_txt{
+    padding-top: 3rem;
+    padding-right: 3rem;
+    line-height: 3rem;
+}
+
+/*Nosotros*/
+
+/*Cursos*/
+
+.Curso_titulo{
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.Curso_contenedor{
+    padding: 1rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    border-bottom: 1px solid var(--Grey);
+    margin: 0rem 20rem;
+}
+
+.Curso_contenedorultimo{
+    padding: 1rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    margin: 0rem 20rem;
+}
+
+.Curso_contenedor_img{
+    height: 40rem;
+    width: 35rem;
+}
+
+.Curso_contendedor_h3{
+    font-size: 2rem;
+}
+
+.Curso_contendedor_precio{
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.Curso_contendedor_cupo{
+    padding: 2.5rem 0rem;
+    font-weight: 700;
+}
+
+.Curso_contendedor_precio_span, .Curso_contendedor_cupo_span{
+    font-weight: normal;
+}
+
+.Curso_contendedor_ptxt{
+    font-size: 1.5rem;
+    font-weight: 549;
+    line-height: 3rem;
+}
+
+/*Cursos*/
+
+/*Contacto*/
+
+.Contenedor_contacto{
+    margin: 1rem 20rem;
+}
+
+.Contenedor_contacto_h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.Contenedor_contacto_formulario{
+    background-image: url(../img/entrada2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+}
+
+.Contenedor_contacto_formulario_form{
+    text-align: left;
+    font-weight:  549;
+    font-size: 1.4rem;
+    background-color: white;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+    margin: -5rem 2rem;
+    text-align: 2rem;
+}
+
+.form_campo{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+
+.form_label{
+    flex: 0 0 8rem;
+    
+}
+
+.form_input{
+    flex: 1;
+    border-color:  solid var(--Grey);
+    border-radius: 0.5rem;
+}
+
+.form_textarea{
+    display: flex;
+    flex: 0 0 90.5%;
+}
+
+.button_submit{
+    background-color: black;
+    color: #ffffff;
+    padding: 0.5rem 2.5rem;
+    margin-left: 8rem;
+    border: none;
+    font-size: 2rem;
+}
+
+
+/*Contacto*/
+
+
+
+
+
+
+
+/*Footer*/
+.Footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.Footer_img{
+    height: 7.5rem;
+    padding-top: 1rem;
+    padding-left: 6rem;
+}
+
+.Footer_nav{
+    padding: 3rem 10rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.Footerna{
+    font-size: 1.8rem;
+    color: var(--Grey);
+}
+/*Footer*/
