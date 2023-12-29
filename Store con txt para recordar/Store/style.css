@@ -1,0 +1,427 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 65.2%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-color: rgb(168, 168, 168);
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+a{text-decoration: none;}
+
+.logotipo{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.logo{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav{
+    background-color: rgb(134, 134, 134);
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+@media (min-width: 768px) {
+    .nav{
+        background-color: rgb(134, 134, 134);
+        text-align: center;
+        margin-top: 1rem;
+        border-radius: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+    }
+}
+
+.menu{
+    text-align: center;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    padding-right: 2rem;
+    font-family:  'Ubuntu', sans-serif;
+}
+
+.menu:last-of-type{
+    padding-right: 0rem;
+}
+
+.menu__nosotros,
+.menu__Inicio,
+.menu:hover{
+    color: yellow;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Spicy Rice', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-right: 0rem;
+}
+
+@media (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.shop{
+    background-color: rgb(134, 134, 134);
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .shop{
+        background-color: rgb(134, 134, 134);
+        margin-left: 3rem;
+        margin-right: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
+.grafico1{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.grafico2{
+    grid-row: 5/4;
+    grid-column: 1/4;
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .grafico1{
+        grid-row: 2/3;
+        grid-column: 1/3;
+        background-repeat: no-repeat;
+        padding-left: 3rem;
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    
+    .grafico2{
+        grid-row: 5/4;
+        grid-column: 2/4;
+        background-repeat: no-repeat;
+        padding-left: 3rem;
+        padding-right: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+.img{
+    width: 100%;
+    padding: 1rem;
+}
+
+.Nombre,
+.Precio{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Nombre{
+    color: yellow;
+}
+.Nombre:hover{
+    color: rgb(201, 201, 0);
+}
+
+.Precio{
+    color: rgb(201, 201, 0);
+}
+
+.Precio:hover{
+    color: yellow;
+}
+
+.Parrafo__nosotros{
+    font-size: 2rem;
+    margin-left: 3rem;
+    margin-right: 0;
+    color: white;
+}
+
+.nosotros__imagen{
+    margin: 0rem;
+    width: 100%;
+    grid-row: 1/2;
+}
+
+@media (min-width: 768px) {
+    .nosotros__imagen{
+        margin: 0rem;
+        width: 100%;
+        grid-column: 2/3;
+    }
+}
+
+.nosotros__imagen{
+        width: 100%;
+}
+
+.parrafo{
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .parrafo{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 912px) {
+    .parrafo{
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1040px) {
+    .parrafo{
+        font-size: 2rem;
+    }
+}
+
+.nosotros{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+    .nosotros{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.Titulo__nosotrosh2{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Staatliches', cursive;
+    color: #FFCE00;
+}
+
+.imgsfinal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+    .imgsfinal{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 912px) {
+    .imgsfinal{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+@media (min-width: 1000px) {
+    .imgsfinal{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+/*Parte final de Nosotrso*/
+
+.Titutlo__nosostros--h3{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Staatliches', cursive;
+    color: #FFCE00;
+}
+
+.imgsfinal__imgs{
+    width: 100%;
+    padding: 2rem;
+}
+
+
+.Titutlo__nosostros--h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+    color: #FFCE00;
+}
+
+.img1{
+    padding-left: 2rem;
+}
+
+.img2{
+    padding-left: 2rem;
+}
+
+.img3{
+    padding-left: 2rem;
+}
+
+.img4{
+    padding-left: 2rem;
+}
+
+.parrafo__nosotros--final{
+    font-size: 2rem;
+}
+
+/*Footer*/
+
+.footer{
+    margin-top: 3rem;
+    background-color: rgb(134, 134, 134);
+}
+
+.footer__h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: black;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+/*Producto*/
+
+.titulo__h1--producto{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Staatliches', cursive;
+    color: #FFCE00;
+}
+
+.Producto{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 3rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+}
+
+
+.producto__img{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .Producto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        padding-left: 2rem;
+        padding-right: 4rem;
+        padding-bottom: rem;
+    }
+}
+    .form__boton--talla{
+        border-radius: 2rem;
+        border-color: rgb(134, 134, 134);
+        border-style: solid;
+        border-width: 0.5rem;
+        background-color: transparent;
+        font-size: 2rem;
+        color: rgb(88, 88, 88);
+        appearance: none;
+    }
+    
+    .form__boton--numero{
+        border-radius: 2rem;
+        border-color: rgb(134, 134, 134);
+        border-style: solid;
+        border-width: 0.5rem;
+        background-color: transparent;
+        font-size: 2rem;
+        color: rgb(88, 88, 88);
+        appearance: none;
+    }
+
+    .contenedor__producto--submit{
+        padding: 1rem;
+        background-color: #FFCE00;
+        color: black;
+        font-size: 2rem;
+        font-family: 'Staatliches', cursive;
+        border-radius: 2rem;
+        display: grid;
+        grid-column: 1/3;
+    }
+
+
+
+
+.contenedor__producto--submit:hover{
+    background-color: #b89300;
+}
+
+.formulario{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .formulario{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+
+.formulario__color{
+    color: rgb(0, 0, 0);
+}
